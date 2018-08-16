@@ -6,6 +6,7 @@
 #include <vector>
 #include <string>
 #include <fstream>
+#include <math.h>
 
 using Eigen::MatrixXd;
 using Eigen::VectorXd;
@@ -66,6 +67,11 @@ public:
 
   ///* Sigma point spreading parameter
   double lambda_;
+
+    double NIS_radar_;
+
+  ///* the current NIS for laser
+  double NIS_laser_;
 
 
   /**
